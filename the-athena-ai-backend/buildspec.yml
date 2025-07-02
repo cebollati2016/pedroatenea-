@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - cd app
+      - npm install
+  build:
+    commands:
+      - cd ..
+      - zip -r app.zip app
+artifacts:
+  files:
+    - app.zip
